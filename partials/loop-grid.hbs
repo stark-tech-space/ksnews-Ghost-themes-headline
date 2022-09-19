@@ -31,21 +31,11 @@
             {{/if}}
 
             <footer class="gh-card-footer">
-<<<<<<< HEAD
-<<<<<<< HEAD
-                <span class="gh-card-author">{{t 'By'}} {{#foreach authors}}{{name}}{{/foreach}}</span>
-=======
-                <span class="gh-card-author">By {{#foreach authors}}{{name}}{{/foreach}}</span>
->>>>>>> origin/main
-                <span class="gh-card-footer-sep"></span>
-                <time class="gh-card-date" datetime="{{date format="YYYY-MM-DD"}}">{{date}}</time>
-=======
                 <span class="gh-card-author">{{#foreach authors}}{{#if @first}}{{name}}{{else}}, {{name}}{{/if}}{{/foreach}}</span>
                 <time class="gh-card-date" datetime="{{date format="YYYY-MM-DD"}}">{{date}}</time>
                 {{#if @site.comments_enabled}}
                     {{comment_count class="gh-card-comments"}}
                 {{/if}}
->>>>>>> 4815ea8a4cb1f20ed7c6b9d7f6a2e1a1e0699f6e
             </footer>
         </div>
     </a>
