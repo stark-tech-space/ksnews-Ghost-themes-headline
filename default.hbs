@@ -51,13 +51,12 @@
             </div>
         </header>
 
-        {{!-- {{navigation}} --}}
-
         {{{body}}}
 
         <footer class="gh-foot gh-outer">
             <div class="gh-foot-inner gh-inner">
-                {{^if @member.paid}}
+                {{#if @site.members_enabled}}
+                {{#unless @member}}
                     <section class="gh-subscribe">
                         {{^if @member}}
                             <h4 class="gh-subscribe-title">{{t 'Subscribe_to'}} {{@site.title}}</h3>
@@ -75,6 +74,7 @@
                             <button class="gh-subscribe-btn gh-btn" data-portal="account/plans">{{t 'Upgrade_now'}}</button>
                         {{/if}}
                     </section>
+                {{/unless}}
                 {{/if}}
 
                 <nav class="gh-foot-menu">
