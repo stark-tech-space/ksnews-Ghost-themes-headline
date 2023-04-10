@@ -8,17 +8,684 @@
     <link rel="stylesheet" href="{{asset "built/screen.css"}}">
 
     {{ghost_head}}
+
+    <style>
+        .css-v5csy4 {
+            display: flex;
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+            box-shadow: rgb(83 122 120 / 15%) 0px 2px 20px;
+        }
+        .css-83nni6 {
+            width: 100%;
+            margin-inline: auto;
+            max-width: 1440px;
+            padding-inline: 1rem;
+        }
+        .css-uh7iy7 {
+            margin-left: -16px;
+            margin-right: -16px;
+            padding-left: 110px;
+            padding-right: 110px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+        }
+        @media (max-width: 768px) {
+            .css-uh7iy7 {
+              padding: 12px 16px;
+              color: rgb(0, 0, 0);
+              height: 70px;
+              font-size: 16px;
+            }
+        }
+        .css-70qvj9 {
+            display: flex;
+            -webkit-box-align: center;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        .css-1wuwsm5 {
+            display: flex;
+            -webkit-box-align: center;
+            align-items: center;
+            padding: 4px;
+        }
+        .css-r7idry {
+            display: flex;
+            -webkit-box-align: center;
+            align-items: center;
+            flex: 1 1 0%;
+            margin-left: 60px;
+            gap: 30px;
+            color: rgb(29, 29, 27);
+        }
+        @media (max-width: 767px) {
+            .css-r7idry {
+                display: none;
+            }
+        }
+            .css-1uawyxg {
+                display: flex;
+            }
+        @media (max-width: 767px) {
+        .css-1uawyxg {
+            display: none;
+            -webkit-box-align: center;
+            align-items: center;
+            color: rgb(25, 76, 168);
+        }
+        }
+        .css-3cooi4 {
+            display: flex;
+            cursor: pointer;
+            font-weight: 700;
+        }
+        .css-1wi81s {
+            margin-left: 0.4rem;
+            color: rgb(29, 29, 27);
+        }
+        
+        .css-1k9efnl {
+            display: flex;
+            -webkit-box-align: center;
+            align-items: center;
+            gap: 8px;
+        }
+        .css-10ezw69 {
+            cursor: pointer;
+        }
+
+        .css-1kmwvge {
+            border-radius: 999px;
+            display: inline-flex;
+            -webkit-box-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            justify-content: center;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 500;
+            position: relative;
+            flex-shrink: 0;
+            background: rgb(25, 76, 168);
+            color: white;
+            border-color: white;
+            vertical-align: top;
+            width: 32px;
+            height: 32px;
+            font-size: calc(0.8rem);
+        }
+        .css-121ye3n {
+            background: white;
+            box-shadow: rgba(0, 0, 0, 0.5) 0px 1px;
+            color: rgb(51, 51, 51);
+            min-width: 80px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            z-index: 1200;
+            border-radius: 6px;
+            border-width: 1px;
+            border-color: rgb(215, 215, 215);
+            border-style: solid;
+            position: absolute;
+            top: 40px;
+            left: 0;
+            width: 92px;
+            text-align: center;
+        }
+        .css-1hr9uuv:hover {
+            background: rgb(219, 229, 249);
+        }
+        .css-1hr9uuv {
+            text-decoration: none;
+            color: inherit;
+            user-select: none;
+            display: flex;
+            width: 100%;
+            -webkit-box-align: center;
+            align-items: center;
+            text-align: start;
+            flex: 0 0 auto;
+            outline-offset: 2px;
+            padding-top: 0.4rem;
+            padding-bottom: 0.4rem;
+            padding-inline: 0.8rem;
+            background: white;
+            border: none;
+            justify-content: center;
+            cursor: pointer;
+        }
+        .css-171wv07:hover {
+            background: rgb(219, 229, 249);
+        }
+        .css-171wv07 {
+            text-decoration: none;
+            color: inherit;
+            user-select: none;
+            display: flex;
+            width: 100%;
+            -webkit-box-align: center;
+            align-items: center;
+            text-align: start;
+            flex: 0 0 auto;
+            outline: transparent solid 2px;
+            outline-offset: 2px;
+            padding-top: 0.4rem;
+            padding-bottom: 0.4rem;
+            padding-inline: 0.8rem;
+            -webkit-box-pack: center;
+            background: white;
+            border: none;
+            justify-content: center;
+            cursor: pointer;
+        }
+        a.user-link:hover {
+            opacity: 1;
+        }
+        .css-11elljy {
+            position: absolute;
+            right: 0;
+            display: none;
+        }
+        @media (max-width: 768px) {
+            .css-11elljy {
+                display: block;
+            }
+        }
+    </style>
+
+    <style>
+        .chakra-portal {}
+        .css-14rxmsw {
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.48);
+            z-index: 1300;
+        }
+        .chakra-modal__content-container {
+            display: flex;
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            bottom: 0px;
+            right: 0px;
+            z-index: 1400;
+            -webkit-box-pack: center;
+            justify-content: center;
+        }
+        .chakra-modal__content {
+            display: flex;
+            flex-direction: column;
+            outline-offset: 2px;
+            z-index: 1400;
+            max-height: 100vh;
+            color: rgb(0, 44, 94);
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 10px;
+            max-width: 320px;
+            background-color: white;
+            outline: transparent solid 2px;
+        }
+
+        .chakra-menu__group .css-1lihy2r {
+            padding: 16px;
+            display: flex;
+            -webkit-box-pack: end;
+            justify-content: flex-end;
+        }
+        .chakra-menu__group .close-container {
+            outline: transparent solid 2px;
+            outline-offset: 2px;
+            display: flex;
+            -webkit-box-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            justify-content: center;
+            flex-shrink: 0;
+            width: 24px;
+            height: 24px;
+            border-radius: 6px;
+            font-size: 10px;
+            color: rgb(74, 85, 104);
+            border: none;
+            background: #fff;
+        }
+        .chakra-menu__group .css-102lqhp{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .chakra-menu__group .css-1ot7jd4 {
+            display: flex;
+            -webkit-box-align: center;
+            align-items: center;
+            justify-content: space-evenly;
+            padding: 10px 20px;
+            gap: 10px;
+            box-shadow: rgba(83, 122, 120, 0.25) 0px 2px 20px;
+            border-radius: 10px;
+            width: 100%;
+            margin: 0px 16px;
+            height: 59px;
+            font-weight: 700;
+            color: rgb(45, 108, 223);
+            font-size: 16px;
+        }
+        .chakra-menu__group .css-zyes7b {
+            -webkit-box-align: center;
+            align-items: center;
+            padding: 10px 20px;
+            gap: 10px;
+            box-shadow: rgba(83, 122, 120, 0.25) 0px 2px 20px;
+            border-radius: 20px;
+            width: 100%;
+            margin: 0px 16px;
+            font-size: 16px;
+        }
+        .chakra-menu__group hr {
+            background-color: rgb(230, 230, 230);
+            border: 0;
+            opacity: 0.6;
+            border-width: 0px 0px 0px 1px;
+            border-image: initial;
+            border-color: rgb(230, 230, 230);
+            border-style: solid;
+            height: 100%;
+            width: 1px;
+            margin: 0;
+        }
+        .chakra-menu__group .css-khibq6 {
+            margin-top: 16px;
+            line-height: 2.4;
+            font-size: 16px;
+        }
+        .chakra-menu__group .css-1ayocsf {
+            text-decoration: none;
+            color: inherit;
+            user-select: none;
+            display: flex;
+            width: 100%;
+            -webkit-box-align: center;
+            align-items: center;
+            text-align: start;
+            flex: 0 0 auto;
+            outline: transparent solid 2px;
+            outline-offset: 2px;
+            padding-top: 0.4rem;
+            padding-bottom: 0.4rem;
+            padding-inline: 0.8rem;
+            font-weight: 700;
+            border: none;
+            background: #fff;
+        }
+        .blog-navigation-container {
+            background-color: #F3F2F2;
+            max-height: 260px;
+            overflow-y: scroll;
+        }
+        .blog-navigation-container .nav {
+            flex-direction: column;
+            width: 100%;
+        }
+        .blog-navigation-container .nav li {
+            width: 100%;
+            padding: 0 32px;
+        }
+        .blog-navigation-container .nav li a {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 22px;
+            color: #4A4A4A;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            max-width: 100%;
+            display: block;
+            height: 38px;
+            padding: 8px 0;
+        }
+        .expand-icon {
+            width: 16px;
+            height: 16px;
+            position: absolute;
+            right: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transform: rotate(180deg);
+        }
+        .active > .expand-icon {
+            transform: rotate(0deg);
+        }
+        .css-1scrf4w {
+            border-radius: 50%;
+            display: inline-flex;
+            -webkit-box-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            justify-content: center;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 500;
+            position: relative;
+            flex-shrink: 0;
+            background: rgb(25, 76, 168);
+            color: white;
+            border-color: white;
+            vertical-align: top;
+            width: 48px;
+            height: 48px;
+            font-size: 20px;
+        }
+        .css-1g2set8 {
+            margin-left: 12px;
+            line-height: 28px;
+        }
+        .css-1is27jx {
+            color: rgb(25, 76, 168);
+            font-weight: 700;
+        }
+        .css-itvw0n {
+            font-size: 14px;
+        }
+    </style>
+
+    <style>
+        .css-footer {
+            display: flex;
+            width: 100%;
+            background-color: rgb(0, 44, 94);
+        }
+        @media (max-width: 768px) {
+            .css-footer {
+                display: none;
+            }
+        }
+        .css-footer-content {
+            width: 100%;
+            margin-inline: auto;
+            max-width: 1440px;
+            padding-inline: 1rem;
+        }
+        .css-footer-content-header {
+            margin-left: -16px;
+            margin-right: -16px;
+            padding-left: 110px;
+            padding-right: 110px;
+            padding-top: 35px;
+            padding-bottom: 12px;
+            font-size: 16px;
+            color: rgb(215, 223, 238);
+        }
+        .css-footer-items {
+            display: flex;
+            -webkit-box-pack: justify;
+            justify-content: space-between;
+        }
+        .css-logo-container {
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .css-email-row {
+            display: flex;
+            gap: 8px;
+            margin-top: 5px;
+        }
+        #ghost-portal-root {
+            display: none;
+        }
+        .css-footer-line {
+            opacity: 0.6;
+            border-width: 0px 0px 1px;
+            border-image: initial;
+            border-color: rgba(215, 223, 238, 0.2);
+            border-style: solid;
+            width: 100%;
+            margin-top: 25px;
+        }
+        .css-1g0cuoo {
+            color: rgb(215, 223, 238);
+            text-align: center;
+            margin-top: 25px;
+            margin-bottom: 20px;
+            font-size: 12px;
+        }
+        .css-footer-h5 {
+            display: none
+        }
+        .css-footer-h5 a {
+            color: rgb(215, 223, 238);
+        }
+        @media (max-width: 768px) {
+            .css-footer-h5 {
+                display: flex;
+                max-width: 1440px;
+                background-color: #002C5E;
+                color: rgb(215, 223, 238);
+                font-weight: 600;
+            }
+        }
+        .css-1mfzt4u {
+            width:100%;
+            margin-inline: auto;
+            max-width: 60ch;
+            padding-inline: 1rem;
+        }
+        .css-owjkmg {
+            display: flex;
+            -webkit-box-align: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .css-1xaekgw {
+            margin-top: 20px;
+        }
+
+        .css-owjkmg > :not(style) ~ :not(style) {
+            margin-top: 8px;
+            margin-inline: 0px;
+            margin-bottom: 0px;
+        }
+        .css-17j4f80 > :not(style) ~ :not(style) {
+            margin-top: 8px;
+            margin-inline: 0px;
+            margin-bottom: 0px;
+        }
+
+        .css-1wzdunz {
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+        }
+
+        .css-owjkmg {
+            display: flex;
+            -webkit-box-align: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .css-17j4f80 {
+            display: flex;
+            -webkit-box-align: center;
+            align-items: center;
+            flex-direction: column;
+            font-size: 14px;
+            line-height: 14px;
+        }
+
+        .css-thp13e {
+            opacity: 0.6;
+            border-width: 0px 0px 1px;
+            border-image: initial;
+            border-color: rgba(215, 223, 238, 0.2);
+            border-style: solid;
+            width: 240px;
+            margin-top: 15px;
+        }
+        .css-1vakbk4 {
+            display: flex;
+            gap: 8px;
+        }
+        .css-1mzghb9 {
+            display: flex;
+            -webkit-box-align: center;
+            align-items: center;
+            flex-direction: column;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+    </style>
 </head>
 
 <body class="{{body_class}}{{{block "body_class"}}} {{#if @site.description}}is-head-b--a_n{{else}}is-head-b--n--a{{/if}}{{#match @custom.title_font "=" "Elegant serif"}} has-serif-title{{/match}}{{#match @custom.body_font "=" "Elegant serif"}} has-serif-body{{/match}}{{#is "tag"}}{{#if tag.feature_image}} is-head-transparent{{/if}}{{/is}}{{#match @custom.header_style "Accent color"}} is-head-brand{{/match}}{{#match @custom.header_style "Dark"}} is-head-dark{{/match}}">
     <div class="gh-site">
+        <div class="css-v5csy4">
+            <div class="chakra-container css-83nni6">
+                <header class="css-uh7iy7">
+                    <div class="css-70qvj9">
+                        <a href="https://test.kktrip.com.tw/">
+                            <div class="css-1wuwsm5">
+                                <span
+                                    style="
+                                        box-sizing: border-box;
+                                        display: inline-block;
+                                        overflow: hidden;
+                                        width: initial;
+                                        height: initial;
+                                        background: none;
+                                        opacity: 1;
+                                        border: 0px;
+                                        margin: 0px;
+                                        padding: 0px;
+                                        position: relative;
+                                        max-width: 100%;
+                                    "
+                                    ><span
+                                        style="
+                                            box-sizing: border-box;
+                                            display: block;
+                                            width: initial;
+                                            height: initial;
+                                            background: none;
+                                            opacity: 1;
+                                            border: 0px;
+                                            margin: 0px;
+                                            padding: 0px;
+                                            max-width: 100%;
+                                        "
+                                        ><img
+                                            alt=""
+                                            aria-hidden="true"
+                                            src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27150%27%20height=%2735%27/%3e"
+                                            style="
+                                                display: block;
+                                                max-width: 100%;
+                                                width: initial;
+                                                height: initial;
+                                                background: none;
+                                                opacity: 1;
+                                                border: 0px;
+                                                margin: 0px;
+                                                padding: 0px;
+                                            " /></span
+                                    ><img
+                                        alt="logo"
+                                        src="https://test.kktrip.com.tw/static/colorTwLogo.svg"
+                                        decoding="async"
+                                        data-nimg="intrinsic"
+                                        style="
+                                            position: absolute;
+                                            inset: 0px;
+                                            box-sizing: border-box;
+                                            padding: 0px;
+                                            border: none;
+                                            margin: auto;
+                                            display: block;
+                                            width: 0px;
+                                            height: 0px;
+                                            min-width: 100%;
+                                            max-width: 100%;
+                                            min-height: 100%;
+                                            max-height: 100%;
+                                        "
+                                    />
+                                </span>
+                            </div>
+                        </a>
+                        <div class="css-r7idry">
+                            <a href="https://test.kktrip.com.tw/hotel">
+                                <div class="css-3cooi4">
+                                    <p class="chakra-text css-1wi81s">酒店探索</p>
+                                </div>
+                            </a>
+                            <a href="https://test.kktrip.com.tw/local-trip">
+                                <div class="css-3cooi4">
+                                    <p class="chakra-text css-1wi81s">當地玩樂</p>
+                                </div>
+                            </a>
+                            <a href="https://test.kktrip.com.tw/blog">
+                                <div class="css-3cooi4">
+                                    <p class="chakra-text css-1wi81s">Blog</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="css-1uawyxg">
+                            <div class="css-1k9efnl" id="ota-login">
+                                <a href="https://test.kktrip.com.tw/register">
+                                    <div class="css-10ezw69">註冊</div>
+                                </a>
+                                <a href="https://test.kktrip.com.tw/login">
+                                    <div class="css-10ezw69">登入</div>
+                                </a>
+                            </div>
+                            <div style="position: relative;">
+                                <div onclick="onclickUser()" class="css-1k9efnl" id="ota-user" style="display: none; cursor: pointer">
+                                    <span class="chakra-avatar css-1kmwvge">
+                                        <svg viewBox="0 0 128 128" class="chakra-avatar__svg css-16ite8i" role="img" aria-label=" avatar">
+                                            <path fill="currentColor" d="M103,102.1388 C93.094,111.92 79.3504,118 64.1638,118 C48.8056,118 34.9294,111.768 25,101.7892 L25,95.2 C25,86.8096 31.981,80 40.6,80 L87.4,80 C96.019,80 103,86.8096 103,95.2 L103,102.1388 Z"></path>
+                                            <path fill="currentColor" d="M63.9961647,24 C51.2938136,24 41,34.2938136 41,46.9961647 C41,59.7061864 51.2938136,70 63.9961647,70 C76.6985159,70 87,59.7061864 87,46.9961647 C87,34.2938136 76.6985159,24 63.9961647,24"></path>
+                                        </svg>
+                                    </span>
+                                    <p class="chakra-text css-0" id="ota-user-name"></p>
+                                </div>
+                                <div class="css-121ye3n" id="ota-user-menu" style="display: none;">
+                                    <a href="https://test.kktrip.com.tw/user/userInfo">
+                                        <button type="button" class="chakra-menu__menuitem css-1hr9uuv" >個人資訊</button>
+                                    </a>
+                                    <a href="https://test.kktrip.com.tw/user/setting">
+                                        <button type="button" class="chakra-menu__menuitem css-1hr9uuv" >安全設置</button>
+                                    </a>
+                                    <a href="https://test.kktrip.com.tw/user/myCollection">
+                                        <button type="button" class="chakra-menu__menuitem css-1hr9uuv" >我的收藏</button>
+                                    </a>
+                                    <a href="https://test.kktrip.com.tw/orders?type=hotel">
+                                        <button type="button" class="chakra-menu__menuitem css-1hr9uuv" >我的訂單</button>
+                                    </a>
+                                    <hr role="separator" aria-orientation="horizontal" class="chakra-menu__divider css-vfkdr8">
+                                    <button onclick="onlogout()" type="button" class="chakra-menu__menuitem css-171wv07" >登出</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <img onclick="openMenuSider()" alt="menuBar logo" src="https://test.kktrip.com.tw/static/menuBar.svg" class="chakra-image css-11elljy" />
+                    </div>
+                </header>
+            </div>
+        </div>
+
         <header id="gh-head" class="gh-head gh-outer">
             <div class="gh-head-inner gh-inner">
                 {{#if @site.description}}
-                    <a class="gh-head-description" href="{{@site.url}}">{{@site.description}}</a>
+                    <a class="gh-head-description" style="display: none;" href="{{@site.url}}">{{@site.description}}</a>
                 {{/if}}
 
-                <div class="gh-head-brand">
+                <div class="gh-head-brand" style="display: none;">
                     <div class="gh-head-brand-wrapper">
                         <a class="gh-head-logo" href="{{@site.url}}">
                             {{#if @site.logo}}
@@ -36,24 +703,24 @@
                     <button class="gh-burger"></button>
                 </div>
 
-                <nav class="gh-head-menu">
+                <nav class="gh-head-menu" style="margin: 12px 0 0;">
                     {{navigation}}
                 </nav>
 
-                <div class="gh-head-actions">
+                {{!-- <div class="gh-head-actions" style="display: none;">
                     <button class="gh-search gh-icon-btn" data-ghost-search>{{> "icons/search"}}</button>
                     {{#unless @member}}
                         <a class="gh-head-btn gh-btn gh-primary-btn" href="#/portal/signup" data-portal="signup">{{t 'Subscribe'}}</a>
                     {{else}}
                         <a class="gh-head-btn gh-btn" href="#/portal/account" data-portal="account">{{t 'Account'}}</a>
                     {{/unless}}
-                </div>
+                </div> --}}
             </div>
         </header>
 
         {{{body}}}
 
-        <footer class="gh-foot gh-outer">
+        {{!-- <footer class="gh-foot gh-outer">
             <div class="gh-foot-inner gh-inner">
                 {{#if @site.members_enabled}}
                 {{#unless @member}}
@@ -89,7 +756,81 @@
                     {{/unless}}
                 </div>
             </div>
-        </footer>
+        </footer> --}}
+
+        <div class="css-footer">
+            <div class="chakra-container css-footer-content">
+                <header class="css-footer-content-header">
+                    <div class="css-footer-items">
+                        <div class="css-logo-container">
+                            <span style="box-sizing: border-box;display: inline-block;overflow: hidden;width: initial;height: initial;background: none;opacity: 1;border: 0px;margin: 0px;padding: 0px;position: relative;max-width: 100%;">
+                                <span style="box-sizing: border-box;display: block;width: initial;height: initial;background: none;opacity: 1;border: 0px;margin: 0px;padding: 0px;max-width: 100%;">
+                                    <img alt="" aria-hidden="true" src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27220%27%20height=%2760%27/%3e" style="display: block;max-width: 100%;width: initial;height: initial;background: none;opacity: 1;border: 0px;margin: 0px;padding: 0px;" />
+                                </span>
+                                <img alt="logo" src="https://test.kktrip.com.tw/static/whiteTwLogo.svg" style="position: absolute;inset: 0px;box-sizing: border-box;padding: 0px;border: none;margin: auto;display: block;width: 0px;height: 0px;min-width: 100%;max-width: 100%;min-height: 100%;max-height: 100%;" />
+                                <noscript></noscript>
+                            </span>
+                        </div>
+                        <div style="line-height: 1.6;">
+                            <div class="css-0"><a style="color: rgb(215, 223, 238)" href="https://test.kktrip.com.tw/hotel">全球酒店</a></div>
+                            <div style="margin-top: 5px;"><a style="color: rgb(215, 223, 238)" href="https://test.kktrip.com.tw/local-trip">全球當地玩樂</a></div>
+                            <div style="margin-top: 5px;"><a style="color: rgb(215, 223, 238)" href="https://test.kktrip.com.tw/common/privacyProtocol">隱私權保護政策及個資聲明</a></div>
+                            <div style="margin-top: 5px;"><a style="color: rgb(215, 223, 238)" href="https://test.kktrip.com.tw/common/serviceProtocol">用戶協議</a></div>
+                        </div>
+                        <div class="css-2rkxr7">
+                            <div class="css-zm3qx2"><p class="chakra-text css-0" style="font-size: 18px; line-height: 1.6;">訂購諮詢</p></div>
+                            <div style="margin-top: 10px;"><p class="chakra-text css-0">聯絡電話 02-2331-1123</p></div>
+                            <div style="margin-top: 5px;"><p class="chakra-text css-0">營業時間： 週一 ~ 週五 09:00 ~ 18:00</p></div>
+                            <div class="css-email-row">
+                                <p class="chakra-text css-0">客服Email:</p>
+                                <p class="chakra-text css-0" style="text-decoration: underline">service@tripintl.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr aria-orientation="horizontal" class="chakra-divider css-footer-line" />
+                    <div class="css-1g0cuoo">
+                        <div class="css-0"><p class="chakra-text css-0">Copyright 2023 康華旅行社股份有限公司</p></div>
+                    </div>
+                </header>
+            </div>
+        </div>
+
+        <div class="css-footer-h5">
+            <div class="chakra-container css-1mfzt4u">
+                <div class="chakra-stack css-owjkmg">
+                    <div class="css-1xaekgw">
+                        <span style="box-sizing: border-box;display: inline-block;overflow: hidden;width: initial;height: initial;background: none;opacity: 1;border: 0px;margin: 0px;padding: 0px;position: relative;max-width: 100%;">
+                        <span style="box-sizing: border-box;display: block;width: initial;height: initial;background: none;opacity: 1;border: 0px;margin: 0px;padding: 0px;max-width: 100%;">
+                            <img alt="" aria-hidden="true" src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27238%27%20height=%2761%27/%3e" style="display: block;max-width: 100%;width: initial;height: initial;background: none;opacity: 1;border: 0px;margin: 0px;padding: 0px; " />
+                        </span>
+                        <img alt="logo" src="https://test.kktrip.com.tw/static/whiteTwLogo.svg" style="position: absolute;inset: 0px;box-sizing: border-box;padding: 0px;border: none;margin: auto;display: block;width: 0px;height: 0px;min-width: 100%;max-width: 100%;min-height: 100%;max-height: 100%; "/>
+                        </span>
+                    </div>
+                    <div class="css-1wzdunz">
+                        <div class="css-0"><a href="https://test.kktrip.com.tw/hotel">全球酒店</a></div>
+                        <div class="css-0"><a href="https://test.kktrip.com.tw/local-trip">全球當地玩樂</a></div>
+                    </div>
+                    <div class="css-0"><a href="https://test.kktrip.com.tw/common/serviceProtocol">隱私權保護政策及個資聲明</a></div>
+                    <div class="css-0"><a href="https://test.kktrip.com.tw/common/serviceProtocol">用戶協議</a></div>
+                    <div class="chakra-stack css-owjkmg">
+                        <div class="css-16lmn53"><p class="chakra-text css-qqfgvy">訂購諮詢</p></div>
+                        <div class="chakra-stack css-17j4f80">
+                        <div class="css-0"><p class="chakra-text css-0">聯絡電話 02-2331-1123</p></div>
+                        <div class="css-0"><p class="chakra-text css-0">營業時間： 週一 ~ 週五 09:00 ~ 18:00</p></div>
+                        <div class="css-1vakbk4">
+                            <p class="chakra-text css-0">客服Email:</p>
+                            <p class="chakra-text css-0" style="text-decoration: underline">service@tripintl.com</p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="chakra-stack css-1mzghb9">
+                <hr aria-orientation="horizontal" class="chakra-divider css-thp13e" />
+                <div class="css-0"><p class="chakra-text css-0">Copyright 2023 康華旅行社股份有限公司</p></div>
+                </div>
+            </div>
+        </div>
+
     </div>
 
     {{#is "post, page"}}
@@ -99,6 +840,192 @@
     <script src="{{asset "built/main.min.js"}}"></script>
 
     {{ghost_foot}}
+
+    <div class="chakra-portal" id="ota-menu-sider" style="display: none;">
+        <div class="chakra-modal__overlay css-14rxmsw" style="opacity: 1"></div>
+        <div onclick="closeMenuSider()" class="chakra-modal__content-container css-1lz89iw">
+            <div style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px" ></div>
+            <div>
+                <div id="sider-content" class="chakra-slide chakra-modal__content css-t0p9wy" style="position: fixed; right: 0px; top: 0px; bottom: 0px; width: 100%; transform: translateX(0%) translateY(0px) translateZ(0px);">
+                    <div class="chakra-menu__group" role="group">
+                        <div class="css-1lihy2r">
+                            <button onclick="closeMenuSider()" type="button" class="close-container">
+                                <svg viewBox="0 0 24 24" focusable="false" class="chakra-icon css-onkibi" aria-hidden="true">
+                                    <path
+                                    fill="currentColor"
+                                    d="M.439,21.44a1.5,1.5,0,0,0,2.122,2.121L11.823,14.3a.25.25,0,0,1,.354,0l9.262,9.263a1.5,1.5,0,1,0,2.122-2.121L14.3,12.177a.25.25,0,0,1,0-.354l9.263-9.262A1.5,1.5,0,0,0,21.439.44L12.177,9.7a.25.25,0,0,1-.354,0L2.561.44A1.5,1.5,0,0,0,.439,2.561L9.7,11.823a.25.25,0,0,1,0,.354Z"
+                                    ></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="chakra-menu__group" role="group">
+                        <div class="css-102lqhp">
+                            <div id="unlogin" class="css-1ot7jd4">
+                                <a href="https://test.kktrip.com.tw/register">
+                                    <div style="color: rgb(45, 108, 223);">註冊</div>
+                                </a>
+                                <hr aria-orientation="vertical" class="chakra-divider css-1aam7vk" />
+                                <a href="https://test.kktrip.com.tw/login">
+                                    <div style="color: rgb(45, 108, 223);">登入</div>
+                                </a>
+                            </div>
+                            <div id="logined" class="css-zyes7b" style="display: none;">
+                                <span class="chakra-avatar css-1scrf4w" onclick="onGoUser()" >
+                                    <svg viewBox="0 0 128 128" class="chakra-avatar__svg css-16ite8i" role="img" aria-label=" avatar">
+                                    <path fill="currentColor" d="M103,102.1388 C93.094,111.92 79.3504,118 64.1638,118 C48.8056,118 34.9294,111.768 25,101.7892 L25,95.2 C25,86.8096 31.981,80 40.6,80 L87.4,80 C96.019,80 103,86.8096 103,95.2 L103,102.1388 Z" ></path>
+                                    <path fill="currentColor" d="M63.9961647,24 C51.2938136,24 41,34.2938136 41,46.9961647 C41,59.7061864 51.2938136,70 63.9961647,70 C76.6985159,70 87,59.7061864 87,46.9961647 C87,34.2938136 76.6985159,24 63.9961647,24" ></path>
+                                    </svg>
+                                </span>
+                                <div class="css-1g2set8">
+                                    <p onclick="onGoUser()" id="ota-h5-username" class="chakra-text css-1is27jx">-</p>
+                                    <p onclick="onGoCollection()" class="chakra-text css-itvw0n">我的收藏</p>
+                                    <p onclick="onGoOrders()" class="chakra-text css-itvw0n">我的訂單</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chakra-menu__group" role="group">
+                    <div class="css-khibq6">
+                        <a href="https://test.kktrip.com.tw/hotel">
+                            <button role="menuitem" class="chakra-menu__menuitem css-1ayocsf">
+                                <p class="chakra-text css-1wi81s">酒店探索</p>
+                            </button>
+                        </a>
+                        <a href="https://test.kktrip.com.tw/local-trip">
+                            <button type="button" class="chakra-menu__menuitem css-1ayocsf" >
+                                <p class="chakra-text css-1wi81s">當地玩樂</p>
+                            </button>
+                        </a>
+                        <button id="expand-button" onclick="onClickExpand()" type="button" class="chakra-menu__menuitem css-1ayocsf" style="position: relative; background-color: #F3F2F2;" >
+                            <p class="chakra-text css-1wi81s">Blog</p>
+                            <div class="expand-icon">
+                                <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.5852 8.0393L9.03305 0.393049C8.92743 0.269866 8.79642 0.170988 8.649 0.103197C8.50158 0.0354064 8.34125 0.000306426 8.17899 0.000306412C8.01673 0.000306398 7.85639 0.0354064 7.70897 0.103197C7.56155 0.170988 7.43054 0.269866 7.32492 0.393048L0.772737 8.0393C0.147425 8.76914 0.665862 9.89648 1.6268 9.89648L14.733 9.89648C15.694 9.89648 16.2124 8.76914 15.5852 8.0393Z" fill="#4A5568"/>
+                                </svg>
+                            </div>
+                        </button>
+                        <div class="blog-navigation-container" id="h5-blog" style="display: none;">
+                            {{navigation}}
+                        </div>
+
+                        <button id="h5-logout-button" onclick="onlogout()" type="button" class="chakra-menu__menuitem css-1ayocsf" style="display: none" >登出</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px" ></div>
+        </div>
+    </div>
+
+
+    <script>
+        function initClickEvent() {
+            var contentEle = document.getElementById("sider-content");
+            if (contentEle) {
+                contentEle.addEventListener("click", function(e) {
+                    e.stopPropagation();
+                });
+            }
+        }
+        initClickEvent();
+
+        function onGoUser() {
+            window.location.href = "https://test.kktrip.com.tw/user";
+        }
+        function onGoCollection() {
+            window.location.href = "https://test.kktrip.com.tw/user/myCollection";
+        }
+        function onGoOrders() {
+            window.location.href = "https://test.kktrip.com.tw/orders";
+        }
+        function onClickExpand() {
+            var ele = document.getElementById("h5-blog");
+            var button = document.getElementById('expand-button');
+            if (ele && button) {
+                if (ele.style.display === 'none') {
+                    ele.style.display = "block";
+                    button.classList.add("active");
+                    console.log(button.classList);
+                } else {
+                    ele.style.display = "none";
+                    button.classList.remove("active");
+                }
+            }
+        }
+        function openMenuSider() {
+            var ele = document.getElementById("ota-menu-sider");
+            if (ele) {
+                ele.style.display = "block";
+            }
+        }
+        function closeMenuSider() {
+            var ele = document.getElementById("ota-menu-sider");
+            if (ele) {
+                ele.style.display = "none";
+            }
+        }
+        function onClickMenuContent(e) {
+            e.stopPropagation();
+        }
+        function onclickUser() {
+            var ele = document.getElementById("ota-user-menu");
+            if (ele) {
+                ele.style.display = ele.style.display === "none" ? 'block' : 'none';
+            }
+        }
+        function onlogout() {
+            window.localStorage.setItem("access_token", "");
+            window.location.href = "https://test.kktrip.com.tw/login";
+        }
+        var token = window.localStorage.getItem("access_token");
+        if (token) {
+            window.fetch("https://b2b-test.kktrip.com.tw/users/selectUserInfo", {
+                headers: {
+                    "authorization": "Bearer " + token,
+                }
+            }).then(function(response) {
+                return response.json();
+            }).then(function(response) {
+                if (response && response.code === 200) {
+                    var surname = response.data && response.data.surname;
+                    var givenName = response.data && response.data.givenName;
+                    var name = `${surname || ''}${givenName || ''}`;
+                    var loginEle = document.getElementById("ota-login");
+                    if (loginEle) {
+                        loginEle.style.display = "none";
+                    }
+                    var userEle = document.getElementById("ota-user");
+                    if (userEle) {
+                        userEle.style.display = "flex";
+                    }
+                    var userNameEle = document.getElementById("ota-user-name");
+                    if (userNameEle) {
+                        userNameEle.innerText = name;
+                    }
+                    // 手机端
+                    var unloginEle = document.getElementById("unlogin");
+                    if (unloginEle) {
+                        unloginEle.style.display = "none";
+                    }
+                    var loginedEle = document.getElementById("logined");
+                    if (loginedEle) {
+                        loginedEle.style.display = "flex";
+                    }
+                    var h5NameEle = document.getElementById("ota-h5-username");
+                    if (h5NameEle) {
+                        h5NameEle.innerText = name;
+                    }
+                    var h5logoutEle = document.getElementById("h5-logout-button");
+                    if (h5logoutEle) {
+                        console.log(h5logoutEle);
+                        h5logoutEle.style.display = "block";
+                    }
+                }
+            });
+        }
+    </script>
 </body>
+
 
 </html>
